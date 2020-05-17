@@ -1,0 +1,26 @@
+{
+  "name": "timetracker",
+  "description": "A Vue.js web extension",
+  "version": null,
+  "manifest_version": 2,
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["https://timetracker.bairesdev.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+
+  "icons": {
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "browser_action": {
+    "default_title": "timetracker",
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
