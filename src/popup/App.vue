@@ -89,11 +89,11 @@ export default {
     },
     getLocal(){
       let items = window.localStorage.getItem("timesheet-items");
-      return items == "" ? [] : JSON.parse(items);      
+      return items == null ? [] : JSON.parse(items);      
     },
     getLocalInfo(){
       let items = window.localStorage.getItem("timesheet-info");
-      return items == "" ? {} : JSON.parse(items);      
+      return items == null ? {} : JSON.parse(items);  //aasdasdsd    
     },
     publish() {
       let self = this;
@@ -146,7 +146,7 @@ export default {
   },
   mounted() {
     let self = this;
-    this.entries = this.getLocal();
+    this.entries = [];//asdas
     let info = this.getLocalInfo();
     if(info != null) {
       this.project = info.project;

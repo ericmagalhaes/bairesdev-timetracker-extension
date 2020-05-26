@@ -1,8 +1,8 @@
 {
-  "name": "timetracker",
+  "name": "BTimetracker",
   "version": "1.0.0",
-  "description": "A Vue.js web extension",
-  "author": "Eric <eric_magalhaes@fulcrumww.com>",
+  "description": "B timetracker",
+  "author": "Eric <ericmagalhaes@gmail.com>",
   "engines": {
     "node": ">=10"
   },

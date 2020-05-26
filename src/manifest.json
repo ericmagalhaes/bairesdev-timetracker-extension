@@ -1,6 +1,6 @@
 {
-  "name": "timetracker",
-  "description": "A Vue.js web extension",
+  "name": "BTimetracker",
+  "description": "BTimetracker for BD",
   "version": null,
   "manifest_version": 2,
   "permissions": ["activeTab", "declarativeContent", "storage"],
@@ -17,7 +17,7 @@
     "128": "icons/icon_128.png"
   },
   "browser_action": {
-    "default_title": "timetracker",
+    "default_title": "BTimetracker",
     "default_popup": "popup/popup.html"
   },
   "background": {
